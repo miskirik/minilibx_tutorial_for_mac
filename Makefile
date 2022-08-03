@@ -18,7 +18,7 @@ $(NAME): $(OBJS)
 		make -C ./libft
 		make -C ./minilibx
 		make -C ./ft_printf
-		gcc -o $(NAME) tutorial.c -I $(MFLAGS) $(CFLAGS) 
+		gcc -o $(NAME) tutorial2.c -I $(MFLAGS) $(CFLAGS)
 
 fclean: clean
 		${RM} ./libft/*.a
@@ -29,5 +29,5 @@ clean:
 		${RM} ./libft/*.o
 		${RM} ./minilibx/*.o
 		${RM} ./ft_printf/*.o
-		
+
 re:		fclean all
